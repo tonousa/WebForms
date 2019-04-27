@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Colors.aspx" />
     <Content Include="packages.config" />
     <Content Include="Basic.Master" />
     <None Include="Web.Debug.config">
@@ -82,9 +83,17 @@
   <ItemGroup>
     <Compile Include="Basic.Master.cs">
       <DependentUpon>Basic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Basic.Master.designer.cs">
       <DependentUpon>Basic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Colors.aspx.cs">
+      <DependentUpon>Colors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Colors.aspx.designer.cs">
+      <DependentUpon>Colors.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

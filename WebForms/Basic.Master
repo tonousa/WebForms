@@ -5,16 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
+    This is a list of<asp:ContentPlaceHolder ID="ListType" runat="server"></asp:ContentPlaceHolder>:
+    <ul>
+        <asp:ContentPlaceHolder ID="ListEntries" runat="server"></asp:ContentPlaceHolder>
+    </ul>
 </body>
 </html>
